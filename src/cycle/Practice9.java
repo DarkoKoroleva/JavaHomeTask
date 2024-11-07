@@ -7,7 +7,7 @@ public class Practice9 {
             System.out.println("This is an infinite while loop");
         }
 
-        do {
+        /*do {
             System.out.println("This is an infinite  do-while loop.");
         } while (true);
 
@@ -24,7 +24,7 @@ public class Practice9 {
             }
             System.out.println("i: " + i);
         }
-
+*/
 
     }
 
