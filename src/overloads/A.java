@@ -24,7 +24,7 @@ public class A {
         // (2)
         a.printNum(new Integer(1));
         a.printNum(11); // execute printNum(int i)
-        a.printNum(1.11f);
-        a.printNum(11.11);
+        a.printNum(1.11f); // автоупаковка до Float
+        a.printNum(11.11); // автоупаковка Number
     }
 }
