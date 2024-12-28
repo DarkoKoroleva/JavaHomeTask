@@ -1,18 +1,18 @@
 package haffmanAlg;
 
-public class HuffmanNode implements Comparable<HuffmanNode> {
-    char character;
+public class Node implements Comparable<Node> {
+    byte character;
     long frequency;
-    HuffmanNode left, right;
+    Node left, right;
 
-    public HuffmanNode(char character, int frequency) {
+    public Node(byte character, long frequency) {
         this.character = character;
         this.frequency = frequency;
         this.left = null;
         this.right = null;
     }
 
-    public HuffmanNode(char character, int frequency, HuffmanNode left, HuffmanNode right) {
+    public Node(byte character, long frequency, Node left, Node right) {
         this.character = character;
         this.frequency = frequency;
         this.left = left;
@@ -20,7 +20,7 @@ public class HuffmanNode implements Comparable<HuffmanNode> {
     }
 
     @Override
-    public int compareTo(HuffmanNode other) {
-        return Integer.compare(this.frequency, other.frequency);
+    public int compareTo(Node other) {
+        return Long.compare(this.frequency, other.frequency);
     }
 }
